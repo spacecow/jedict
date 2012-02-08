@@ -43,6 +43,30 @@ describe Glossary do
       end
     end
 
+    context "word with no reading" do
+      it "adds a glossary to the database" do
+        lambda do
+          Glossary.generate('data/edict_no_reading.txt')
+        end.should change(Glossary,:count).by(1)
+      end
+
+      it "the glossary name is set" do
+        Glossary.generate('data/edict_no_reading.txt')
+        Glossary.last.name.should eq 'あ'
+      end
+
+      it "adds a definition to the database" do
+        lambda do
+          Glossary.generate('data/edict_no_reading.txt')
+        end.should change(Definition,:count).by(1)
+      end
+
+      it "the definiton reading is not set" do
+        Glossary.generate('data/edict_no_reading.txt')
+        Definition.first.reading.should be_nil 
+      end
+    end
+
     context "same word with two different readings" do
       it "adds one glossary to the database" do
         lambda do

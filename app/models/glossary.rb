@@ -17,9 +17,16 @@ class Glossary < ActiveRecord::Base
     end
 
     def edict_name(s) s.split[0] end
-    def edict_reading(s) s.split[1][1..-2] end
+    def edict_reading(s) 
+      s.split[1][1..-2] if s.split[1] =~ /^\[.+\]$/ 
+    end
     def edict_meanings(s)
-      arr = s.split[2..-1].join(' ').split(/\(\d+\)/)
+      arr = []
+      if s.split[1] =~ /^\[.+\]$/ 
+        arr = s.split[2..-1].join(' ').split(/\(\d+\)/)
+      else
+        arr = s.split[1..-1].join(' ').split(/\(\d+\)/)
+      end
       if arr.count == 1
         arr.map{|e| e[1..-2]} 
       else

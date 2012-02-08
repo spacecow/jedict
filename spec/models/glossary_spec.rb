@@ -83,13 +83,13 @@ describe Glossary do
         Definition.last.meanings.should eq Meaning.all[2..3]
       end
     end
-  end
+  end #generate
 
   describe "#edict_name" do
     it "cuts out the name" do
       Glossary.edict_name("銀河 [ぎんが] /(n) (1) Milky Way/(2) galaxy/(P)/").should eq "銀河"
     end
-  end
+  end #edict_name
 
   describe "#edict_reading" do
     it "cuts out the reading" do
@@ -111,6 +111,58 @@ describe Glossary do
       it "two meanings where 2nd starts with non-number" do
         Glossary.edict_meanings("銀河 [ぎんが] /(n) (1) Milky Way/yeah/(n) (2) galaxy/(P)/").should eq ["(n) Milky Way/yeah","(n) galaxy/(P)"] 
       end
+    end
+  end #edict_meanings
+
+  context "#create_glossary" do
+    it "no arguments creates an empty glossary" do
+      lambda do
+        lambda do
+          lambda do
+            create_glossary
+          end.should change(Glossary,:count).by(1)
+          Glossary.last.name.should eq "RSpec Name"
+        end.should change(Definition,:count).by(0)
+      end.should change(Meaning,:count).by(0)
+    end
+
+    it "one argument creates a glossary with name" do
+      lambda do
+        lambda do
+          lambda do
+            create_glossary("板垣")
+          end.should change(Glossary,:count).by(1)
+          Glossary.last.name.should eq "板垣"
+        end.should change(Definition,:count).by(0)
+      end.should change(Meaning,:count).by(0)
+    end
+
+    it "two arguments creates a glossary with name and definition with reading" do
+      lambda do
+        lambda do
+          lambda do
+            create_glossary("板垣","いたがき")
+          end.should change(Glossary,:count).by(1)
+          Glossary.last.name.should eq "板垣"
+        end.should change(Definition,:count).by(1)
+        Glossary.last.definitions.should eq [Definition.last]
+        Definition.last.reading.should eq "いたがき"
+      end.should change(Meaning,:count).by(0)
+    end
+
+    it "three arguments creates a glossary with name, definition with reading and meaning with content" do
+      lambda do
+        lambda do
+          lambda do
+            create_glossary("板垣","いたがき","fruit shop")
+          end.should change(Glossary,:count).by(1)
+          Glossary.last.name.should eq "板垣"
+        end.should change(Definition,:count).by(1)
+        Glossary.last.definitions.should eq [Definition.last]
+        Definition.last.reading.should eq "いたがき"
+      end.should change(Meaning,:count).by(1)
+      Definition.last.meanings.should eq [Meaning.last]
+      Meaning.last.content.should eq "fruit shop"
     end
   end
 end

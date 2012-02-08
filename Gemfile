@@ -4,6 +4,9 @@ gem 'rails', '3.1.0'
 gem 'mysql2'
 gem 'jquery-rails'
 gem 'redis'
+gem 'execjs'
+gem 'therubyracer'
+gem 'yajl-ruby'
 
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"

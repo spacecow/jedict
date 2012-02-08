@@ -137,48 +137,107 @@ describe Glossary do
       end.should change(Meaning,:count).by(0)
     end
 
-    it "two arguments creates a glossary with name and definition with reading" do
+    context "glossary with name and definition with reading" do
+      it "second argument is a string" do
+        lambda do
+          lambda do
+            lambda do
+              create_glossary("板垣","いたがき")
+            end.should change(Glossary,:count).by(1)
+          end.should change(Definition,:count).by(1)
+        end.should change(Meaning,:count).by(0)
+      end
+
+      it "second argument is an array" do
+        lambda do
+          lambda do
+            lambda do
+              create_glossary("板垣",["いたがき"])
+            end.should change(Glossary,:count).by(1)
+          end.should change(Definition,:count).by(1)
+        end.should change(Meaning,:count).by(0)
+      end
+
+      after(:each) do
+        Glossary.last.name.should eq "板垣"
+        Glossary.last.definitions.should eq [Definition.last]
+        Definition.last.reading.should eq "いたがき"
+      end
+    end
+
+    context "glossary with name, definition with reading and meaning with content" do
+      it "three arguments" do
+        lambda do
+          lambda do
+            lambda do
+              create_glossary("板垣","いたがき","fruit shop")
+            end.should change(Glossary,:count).by(1)
+          end.should change(Definition,:count).by(1)
+        end.should change(Meaning,:count).by(1)
+      end
+
+      it "second argument is an array" do
+        lambda do
+          lambda do
+            lambda do
+              create_glossary("板垣",["いたがき","fruit shop"])
+            end.should change(Glossary,:count).by(1)
+          end.should change(Definition,:count).by(1)
+        end.should change(Meaning,:count).by(1)
+      end
+
+      after(:each) do
+        Glossary.last.name.should eq "板垣"
+        Glossary.last.definitions.should eq [Definition.last]
+        Definition.last.reading.should eq "いたがき"
+        Definition.last.meanings.should eq [Meaning.last]
+        Meaning.last.content.should eq "fruit shop"
+      end
+    end
+
+    context "glossary with name, definition with reading and two meanings with content" do
+      it "four arguments" do
+        lambda do
+          lambda do
+            lambda do
+              create_glossary("板垣","いたがき","fruit shop","meeting place")
+            end.should change(Glossary,:count).by(1)
+          end.should change(Definition,:count).by(1)
+        end.should change(Meaning,:count).by(2)
+      end
+
+      it "second argument array" do
+        lambda do
+          lambda do
+            lambda do
+              create_glossary("板垣",["いたがき","fruit shop","meeting place"])
+            end.should change(Glossary,:count).by(1)
+          end.should change(Definition,:count).by(1)
+        end.should change(Meaning,:count).by(2)
+      end
+
+      after(:each) do
+        Glossary.last.name.should eq "板垣"
+        Glossary.last.definitions.should eq [Definition.last]
+        Definition.last.reading.should eq "いたがき"
+        Definition.last.meanings.should eq [Meaning.first,Meaning.last]
+        Meaning.first.content.should eq "fruit shop"
+        Meaning.last.content.should eq "meeting place"
+      end
+    end #four arguments...
+    
+    it "glossary with name and two readings" do
       lambda do
         lambda do
           lambda do
-            create_glossary("板垣","いたがき")
+            create_glossary("板垣",["いたがき"],["ショップ"])
           end.should change(Glossary,:count).by(1)
-          Glossary.last.name.should eq "板垣"
-        end.should change(Definition,:count).by(1)
-        Glossary.last.definitions.should eq [Definition.last]
-        Definition.last.reading.should eq "いたがき"
+          Glossary.first.name.should eq "板垣"
+        end.should change(Definition,:count).by(2)
+        Glossary.first.definitions.should eq [Definition.first,Definition.last]
+        Definition.first.reading.should eq "いたがき"
+        Definition.last.reading.should eq "ショップ"
       end.should change(Meaning,:count).by(0)
     end
-
-    it "three arguments creates a glossary with name, definition with reading and meaning with content" do
-      lambda do
-        lambda do
-          lambda do
-            create_glossary("板垣","いたがき","fruit shop")
-          end.should change(Glossary,:count).by(1)
-          Glossary.last.name.should eq "板垣"
-        end.should change(Definition,:count).by(1)
-        Glossary.last.definitions.should eq [Definition.last]
-        Definition.last.reading.should eq "いたがき"
-      end.should change(Meaning,:count).by(1)
-      Definition.last.meanings.should eq [Meaning.last]
-      Meaning.last.content.should eq "fruit shop"
-    end
-
-    it "four arguments creates a glossary with name, definition with reading and two meanings with content" do
-      lambda do
-        lambda do
-          lambda do
-            create_glossary("板垣","いたがき","fruit shop")
-          end.should change(Glossary,:count).by(1)
-          Glossary.last.name.should eq "板垣"
-        end.should change(Definition,:count).by(1)
-        Glossary.last.definitions.should eq [Definition.last]
-        Definition.last.reading.should eq "いたがき"
-      end.should change(Meaning,:count).by(1)
-      Definition.last.meanings.should eq [Meaning.last]
-      Meaning.last.content.should eq "fruit shop"
-    end
-
   end
 end

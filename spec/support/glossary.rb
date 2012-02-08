@@ -1,5 +1,5 @@
-def create_glossary(jap="RSpec Name",read=nil,mean=nil)
+def create_glossary(jap="RSpec Name",*opt)
   glossary = Factory(:glossary,name:jap)
-  glossary.definitions << create_definition(read,mean) if read
+  glossary.definitions << create_definition(*opt) if opt.first 
   glossary
 end

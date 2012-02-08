@@ -38,5 +38,9 @@ class Glossary < ActiveRecord::Base
         ret
       end
     end
+  end #class
+
+  def definitions_or_new
+    definitions.empty? ? [Definition.new] : definitions
   end
 end

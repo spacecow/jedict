@@ -26,7 +26,7 @@ describe "Glossaries" do
       end
 
       it "table has one row and one col" do
-        tablerow(0).should eq %w(板垣)
+        tablerow(0).should eq ["板垣","",""]
       end
     end
 
@@ -37,7 +37,18 @@ describe "Glossaries" do
       end
 
       it "table has one row and one col" do
-        tablerow(0).should eq %w(板垣 いたがき)
+        tablerow(0).should eq ["板垣","いたがき",""]
+      end
+    end
+
+    context "layout, with glossary, definition and meaning" do
+      before(:each) do
+        create_glossary("板垣","いたがき","fruit shop")
+        visit glossaries_path
+      end
+
+      it "table has one row and one col" do
+        tablerow(0).should eq ["板垣","いたがき","fruit shop"]
       end
     end
   end

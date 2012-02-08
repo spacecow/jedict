@@ -1,5 +1,5 @@
-def create_definition(read,mean=nil)
+def create_definition(read,*opt)
   definition = Factory(:definition,reading:read)
-  definition.meanings << create_meaning(mean) if mean
+  definition.meanings << create_meaning(opt.first) if opt.first 
   definition
 end

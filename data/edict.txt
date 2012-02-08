@@ -1,0 +1,100 @@
+・ [なかぐろ] /(n) middle dot (typographical symbol used between parallel terms, names in katakana, etc.)/full-stop mark at mid-character height/interpoint (interword separation)/
+・ [なかぽち] /(n) middle dot (typographical symbol used between parallel terms, names in katakana, etc.)/full-stop mark at mid-character height/interpoint (interword separation)/
+・ [なかぽつ] /(n) middle dot (typographical symbol used between parallel terms, names in katakana, etc.)/full-stop mark at mid-character height/interpoint (interword separation)/
+・ [なかポツ] /(n) middle dot (typographical symbol used between parallel terms, names in katakana, etc.)/full-stop mark at mid-character height/interpoint (interword separation)/
+ヽ /(n) repetition mark in katakana/
+ヾ /(n) voiced repetition mark in katakana/
+ゝ /(n) repetition mark in hiragana/
+ゞ /(n) voiced repetition mark in hiragana/
+〃 [おなじ] /(n) ditto mark/
+〃 [おなじく] /(n) ditto mark/
+仝 [どうじょう] /(n) "as above" mark/
+々 [おなじ] /(n) repetition of kanji (sometimes voiced)/
+々 [おなじく] /(n) repetition of kanji (sometimes voiced)/
+々 [くりかえし] /(n) repetition of kanji (sometimes voiced)/
+々 [どうのじてん] /(n) repetition of kanji (sometimes voiced)/
+々 [のま] /(n) repetition of kanji (sometimes voiced)/
+〆 [しめ] /(n) end or closure mark/
+〆る [しめる] /(v1,vt) (1) to total/to sum/(2) to make sushi adding a mixture of vinegar and salt/
+〆切 [しめきり] /(n) (1) deadline/closing/cut-off/end/(2) cofferdam/(adj-no,n) (3) closed (door, window, etc.)/
+〆切り [しめきり] /(n) (1) deadline/closing/cut-off/end/(2) cofferdam/(adj-no,n) (3) closed (door, window, etc.)/
+〆切る [しめきる] /(v5r,vt) to close up/to shut up (e.g. behind doors)/to cut off (e.g. because a deadline has expired)/
+〆切日 [しめきりび] /(n) time limit/closing day/deadline/
+〆粕 [しめかす] /(n) oil cake/scrap cake/
+〇 [かんすうじゼロ] /(n) "kanji" zero/
+〇 [まる] /(iK) (n) (1) circle (sometimes used for zero)/(2) 'correct' (when marking)/
+〇〇 [まるまる] /(n) symbol used as a placeholder (either because a number of other words could be used in that position, or because of censorship)/
+ー /(n) long vowel mark (usually only used in katakana)/
+～ [にょろ] /(n) tilde/
+～朝時代 [～ちょうじだい] /(exp) the era of the ... dynasty/the ... reign/
+～年生まれ [～ねんうまれ] /(exp) born in .../
+＋α [プラスアルファ] /(n) a little more than usual (wasei: plus alpha)/bribe money added to a regular fee/and then some/
+× [ばつ] /(n) (1) x-mark (used to indicate an incorrect answer in a test, etc.)/
+× [ぺけ] /(n) (1) x-mark (used to indicate an incorrect answer in a test, etc.)/
+＠ [アットマーク] /(n) "at" mark/
+＠系 [アットけい] /(n) roguelike (character display computer game)/
+○ [かんすうじゼロ] /(iK) (n) "kanji" zero/
+○ [まる] /(n) (1) circle (sometimes used for zero)/(2) 'correct' (when marking)/
+○×テスト [まるばつテスト] /(n) true-false test/yes-no test/
+◎ [にじゅうまる] /(n) double circle/'good work' (equiv. of silver star awarded to children at school)/
+△ [さんかく] /(n) average (e.g. as a mark for homework)/weak/
+※ [こめじるし] /(n) rice symbol/note (supplementary information) symbol/symbol with an "x" and four dots/
+※印 [こめじるし] /(n) rice symbol/note (supplementary information) symbol/symbol with an "x" and four dots/
+〒 [ゆうびんきごう] /(n) (abbr) (Japanese) postal symbol/post office/post/postal service/mail/
+→ [やじるし] /(n) arrow (mark or symbol)/directional marker or indicator/
+← [やじるし] /(n) arrow (mark or symbol)/directional marker or indicator/
+↑ [やじるし] /(n) arrow (mark or symbol)/directional marker or indicator/
+↓ [やじるし] /(n) arrow (mark or symbol)/directional marker or indicator/
+≒ [おおよそ] /(adv,n) (uk) about/roughly/as a rule/approximately/
+０９０金融 [ゼロキューゼロきんゆう] /(n) "090" financing/loan sharks operating from a cellphone (i.e. without a fixed phone number)/
+１ [いち] /(num,pref) (1) one/(suf) (2) best in/the most (...) in (where an adjective follows)/
+１ [ひと] /(num,pref) (1) one/
+１０００円 [せんえん] /(n) 1000 yen/(P)/
+１００円ショップ [ひゃくえんショップ] /(n) hundred-yen store/(P)/
+１００円玉 [ひゃくえんだま] /(n) 100 yen coin/
+１００円均一 [ひゃくえんきんいち] /(n) (abbr) hundred-yen store/100 yen store/
+１００円均一ショップ [ひゃくえんきんいちショップ] /(n) hundred-yen store/100 yen store/
+１００均 [ひゃっきん] /(n) (abbr) hundred-yen store/100 yen shop/(P)/
+１０月 [じゅうがつ] /(n-adv) October/(P)/
+１０個１組 [じっこいちくみ] /(n) (comp) decade/
+１０個１組 [じっこひとくみ] /(n) (comp) decade/
+１０進 [じっしん] /(adj-na,adj-no) decimal/denary/deciam/
+１０進 [じゅっしん] /(adj-na,adj-no) decimal/denary/deciam/
+１０進２進変換 [じっしんにしんへんかん] /(n) (comp) decimal to binary conversion/
+１０進演算 [じっしんえんざん] /(n) (comp) decimal arithmetic/
+１０進演算子 [じっしんえんざんし] /(n) (comp) decimal operator/
+１０進基数 [じっしんきすう] /(n) (comp) decimal radix/
+１０進小数 [じっしんしょうすう] /(n) (comp) decimal fraction/
+１０進小数点 [じっしんしょうすうてん] /(n) (comp) decimal point/
+１０進数 [じっしんすう] /(n) (comp) decimal/decimal digit/decimal number/
+１０進法 [じっしんほう] /(n) decimal system/
+１０代 [じゅうだい] /(n,adj-no) (1) the teens (10-19)/teenage/(n) (2) the tenth generation/(P)/
+１０日 [とおか] /(n) (1) the tenth day of the month/(2) ten days/(P)/
+１１０番 [ひゃくとおばん] /(n,vs) police emergency tel. no. (in Japan)/(P)/
+１１９番 [ひゃくじゅうきゅうばん] /(n) ambulance and fire brigade emergency tel. no. (in Japan)/
+１１月 [じゅういちがつ] /(n-adv) November/(P)/
+１２月 [じゅうにがつ] /(n-adv) December/(P)/
+１６進法 [じゅうろくしんほう] /(n) (comp) hexadecimal/hexadecimal notation/
+１８６７年憲法法 [せんはっぴゃくろくじゅうしちねんけんぽうほう] /(n) Constitution Act 1867 (which established Canada)/
+１８禁 [じゅうはちきん] /(n) 18 certificate/R-18/restricted to those 18 years or older/
+１９８２年憲法 [せんきゅうひゃくはちじゅうにねんけんぽう] /(n) Constitution Act, 1982 (part of the Canadian Constitution)/
+１つ [ひとつ] /(num) (1) one/(n) (2) for one thing (often used in itemized lists)/(3) (after a noun) only/(4) (with a verb in negative form) (not) even/(n-adv) (5) just (i.e. "just try it")/
+１パイント [いちパイント] /(n) one pint/
+１羽 [いちわ] /(n) one (bird)/
+１回生 [いっかいせい] /(n) first year (college) student/freshman/
+１割 [いちわり] /(n) ten percent/(P)/
+１月 [いちがつ] /(n-adv) January/(P)/
+１限目 [いちげんめ] /(n) first period (e.g. first class in school day)/
+１個あたり [いっこあたり] /(n,ctr) each/per piece/
+１個当り [いっこあたり] /(n,ctr) each/per piece/
+１次キャッシュ [いっしキャッシュ] /(n) (comp) level 1 cache/
+１次コイル [いちじコイル] /(n) primary coil/primary winding (in transformer)/
+１勝 [いっしょう] /(n) one win/one victory/
+１人 [いちにん] /(n) (1) one person/
+１人 [ひとり] /(n) (1) one person/(2) alone/unmarried/solitary/
+１人あたり [ひとりあたり] /(exp,adv) per person/per capita/per head/
+１人きり [ひとりきり] /(n,adv) all on one's own/
+１人っきり [ひとりっきり] /(n,adv) all on one's own/
+１人っ切り [ひとりっきり] /(n,adv) all on one's own/
+１人切り [ひとりきり] /(n,adv) all on one's own/
+１人当たり [ひとりあたり] /(exp,adv) per person/per capita/per head/

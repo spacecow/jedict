@@ -164,5 +164,21 @@ describe Glossary do
       Definition.last.meanings.should eq [Meaning.last]
       Meaning.last.content.should eq "fruit shop"
     end
+
+    it "four arguments creates a glossary with name, definition with reading and two meanings with content" do
+      lambda do
+        lambda do
+          lambda do
+            create_glossary("板垣","いたがき","fruit shop","meeting place")
+          end.should change(Glossary,:count).by(1)
+          Glossary.last.name.should eq "板垣"
+        end.should change(Definition,:count).by(1)
+        Glossary.last.definitions.should eq [Definition.last]
+        Definition.last.reading.should eq "いたがき"
+      end.should change(Meaning,:count).by(2)
+      Definition.last.meanings.should eq [Meaning.first,Meaning.last]
+      Meaning.first.content.should eq "fruit shop"
+      Meaning.last.content.should eq "meeting place"
+    end
   end
 end

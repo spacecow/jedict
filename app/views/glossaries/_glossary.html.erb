@@ -1,6 +1,9 @@
-<% glossary.definitions.each do |definition| %>
-  <tr>
-    <td><%= glossary.name %></td>
-    <td><%= definition.reading %></td>
-  </tr>
+<% glossary.definitions_or_new.each_with_index do |definition,i| %>
+  <% definition.meanings_or_new.each_with_index do |meaning,j| %>
+    <tr>
+      <td><%= glossary.name if j==0 %></td>
+      <td><%= definition.reading if j==0 %></td>
+      <td><%= meaning.content %></td>
+    </tr>
+  <% end %>
 <% end %>

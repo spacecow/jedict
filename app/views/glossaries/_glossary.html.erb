@@ -1,7 +1,7 @@
 <% glossary.definitions_or_new.each_with_index do |definition,i| %>
   <% definition.meanings_or_new.each_with_index do |meaning,j| %>
     <tr>
-      <td><%= glossary.name if j==0 %></td>
+      <td><%= glossary.name if i==0 && j==0 %></td>
       <td><%= definition.reading if j==0 %></td>
       <td><%= meaning.content %></td>
     </tr>
